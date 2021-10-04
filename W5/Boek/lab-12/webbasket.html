@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Computer Depot</title>
+    <script src="script2.js" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="cont">
+    <input type="image" src="../images/viewcart.jpg" onclick="basket.viewBasket()" width="50px">
+    <br>
+    <div id="rows">
+
+    </div>
+</div>
+<hr>
+
+    <img src="../images/laptopcases.jpg" alt="" width="150px">
+    <br>Flip Cases Prijs 9.99
+    <form action="webbasket.html" name="orderform" method="get" onsubmit="basket.addItem(this)">
+        <input type="hidden" id="id" name="id" value="1">
+        <input type="hidden" id="product" name="product" value="Laptop Case">
+        <input type="hidden" id="model" name="model" value="Flip">
+        <input type="hidden" id="prijs" name="prijs" value="9.99">
+        Aantal:
+        <input type="text" size="2" maxlength="3" name="aantal" value="1">
+
+        <input type="image" src="../images/basket.png" width="100px">
+    </form>
+
+
+<hr>
+
+    <img src="../images/mouse.jpeg" alt="" width="150px">
+    <br>Gamer Muis Prijs 12.50
+    <form action="webbasket.html" name="orderform" method="get" onsubmit="basket.addItem(this)">
+        <input type="hidden" id="id" name="id" value="2">
+        <input type="hidden" id="product" name="product" value="Muis">
+        <input type="hidden" id="model" name="model" value="Gamer">
+        <input type="hidden" id="prijs" name="prijs" value="12.50">
+        Aantal:
+        <input type="text" size="2" maxlength="3" name="aantal" value="1">
+
+        <input type="image" src="../images/basket.png" width="100px">
+    </form>
+
+<hr>
+
+
+    <img src="../images/usb.jpeg" alt="" width="150px">
+    <br>God USB Prijs 25.50
+    <form action="webbasket.html" name="orderform" method="get" onsubmit="basket.addItem(this)">
+        <input type="hidden" id="id" name="id" value="3">
+        <input type="hidden" id="product" name="product" value="USB">
+        <input type="hidden" id="model" name="model" value="God">
+        <input type="hidden" id="prijs" name="prijs" value="25.50">
+        Aantal:
+        <input type="text" size="2" maxlength="3" name="aantal" value="1">
+
+        <input type="image" src="../images/basket.png" width="100px">
+    </form>
+
+    <hr>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+td{
+    border: black solid 1px;
+    padding: 3px;
+}
+td:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.geel{
+    background-color: yellow;
+}
+.blauw{
+    background-color: aqua;
+}
+.paars{
+    background-color: mediumpurple;
+}
+.huid{
+    background-color: peachpuff;
+    color: green;
+}
+th{
+    padding: 4px;
+    background-color: darkgrey;
+}

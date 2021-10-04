@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+<div id="calculator">
+    <form action="index.html" method="post" name="calc">
+        <input type="text" name="output" id="output" value="0">
+        <table id="buttontable">
+
+            <tr>
+                <td>
+                    <input type="button" value="C" onclick="calculator.reset();">
+                </td>
+                <td>
+                    <input type="button" value="BS" disabled>
+                </td>
+                <td>
+                    <input type="button" value="MR" disabled>
+                </td>
+                <td>
+                    <input type="button" value="MC" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="calculator.operandx('7');">
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="calculator.operandx('8');">
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="calculator.operandx('9');">
+                </td>
+                <td>
+                    <input type="button" value="*" onclick="calculator.oper('*');">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="calculator.operandx('4');">
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="calculator.operandx('5');">
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="calculator.operandx('6');">
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="calculator.oper('-');">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="calculator.operandx('1');">
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="calculator.operandx('2');">
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="calculator.operandx('3');">
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="calculator.oper('+');">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="0" onclick="calculator.operandx('0');">
+                </td>
+                <td>
+                    <input type="button" value="." onclick="calculator.operandx('.');">
+                </td>
+                <td>
+                    <input type="button" value="=" onclick="calculator.calculate('=');">
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="calculator.oper('/');">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
